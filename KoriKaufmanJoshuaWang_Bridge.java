@@ -1,1 +1,3 @@
-joshua 
+public class KoriKaufmanJoshuaWang_Bridge {
+
+}
