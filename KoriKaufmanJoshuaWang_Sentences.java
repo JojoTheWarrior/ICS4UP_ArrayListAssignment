@@ -1,11 +1,4 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-/**
- * We 
- * 
- * 
- */
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * <h1>Course Info</h1>
@@ -210,7 +203,7 @@ public class KoriKaufmanJoshuaWang_Sentences {
             return capitalize(rand(nouns)) + " " + rand(adjectives) + "ly " + rand(verbs) + " " + rand(prepositions) + " " + rand(nouns) + "s.";
         }
     }
-
+    
     public static void main(String[] args){
         KoriKaufmanJoshuaWang_Sentences driver = new KoriKaufmanJoshuaWang_Sentences();
         for (int i = 1; i <= 10; i++){
