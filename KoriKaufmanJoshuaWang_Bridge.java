@@ -8,7 +8,7 @@ import java.util.*;
  * ISC4U0 with Krasteva, V.
  *
  * @version 1.1
- * @author Elisha Kaufman & Joshua Wang
+ * @author Kori Kaufman & Joshua Wang
  */
 public class Bridge{
   /** Full deck */
