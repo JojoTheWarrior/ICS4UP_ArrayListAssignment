@@ -51,7 +51,6 @@ public class KoriKaufmanJoshuaWang_Sentences {
     ));
     /**
      * ArrayList for verbs. 
-     * TODO: could include multiple tenses, too.
      */
     private ArrayList<String> verbs = new ArrayList<String>(Arrays.asList(
         "exposes",

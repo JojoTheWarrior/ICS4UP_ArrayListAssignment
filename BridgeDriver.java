@@ -9,10 +9,10 @@
  */
 public class BridgeDriver {
   /**
-   * Main method, creates object of Bridge class, introduces purpose of program, calls shuffleDeck(), deal(), and display() methods
+   * Main method, creates object of KoriKaufmanJoshuaWang_Bridge class, introduces purpose of program, calls shuffleDeck(), deal(), and display() methods
    */
   public static void main (String[] args) {
-    Bridge b = new Bridge();
+    KoriKaufmanJoshuaWang_Bridge b = new KoriKaufmanJoshuaWang_Bridge();
     b.shuffleDeck();
     b.deal();
     System.out.println("Welcome one and all to a round of Bridge!");
