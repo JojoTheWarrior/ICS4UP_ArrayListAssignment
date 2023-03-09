@@ -2,24 +2,26 @@ import java.util.*;
 
 /**
  * <h1>Course Info</h1>
- * ICS4UP with Krasteva, V.
+ * <p>ICS4UP with Krasteva, V.</p>
  * 
+ * <p>This class contains 5 ArrayLists of Strings that each contain one type of a word. Then, simple sentences are created by following a simple English sentence structure.</p>
+ * <p>All ArrayLists are public so that its child class (AIPoem) can access them.</p>
+ * 
+ * @version 1.1
  * @author Kori Kaufman and Joshua Wang
- * 
- * This class contains 5 ArrayLists of Strings that each contain one type of a word. Then, simple sentences are created by following a simple English sentence structure.
  */
 public class KoriKaufmanJoshuaWang_Sentences {
     /**
      * ArrayList for articles. English has 3 articles: "a", "an", and "the". To ensure grammatical integrity and to maintain simplicity, all nouns in this program will only start with consonants.
      */
-    private ArrayList<String> articles = new ArrayList<String>(Arrays.asList(
+    public ArrayList<String> articles = new ArrayList<String>(Arrays.asList(
         "a",
         "the"
     ));
     /**
      * ArrayList for nouns (no proper nouns, only common nouns).
      */
-    private ArrayList<String> nouns = new ArrayList<String>(Arrays.asList(
+    public ArrayList<String> nouns = new ArrayList<String>(Arrays.asList(
         "damage",
         "worker",
         "winner",
@@ -52,7 +54,7 @@ public class KoriKaufmanJoshuaWang_Sentences {
     /**
      * ArrayList for verbs. 
      */
-    private ArrayList<String> verbs = new ArrayList<String>(Arrays.asList(
+    public ArrayList<String> verbs = new ArrayList<String>(Arrays.asList(
         "exposes",
         "exports",
         "achieves",
@@ -83,7 +85,7 @@ public class KoriKaufmanJoshuaWang_Sentences {
         "schedules",
         "relies",
         "imports",
-        "qualifise",
+        "qualifies",
         "trusts",
         "confides",
         "swims",
@@ -102,7 +104,7 @@ public class KoriKaufmanJoshuaWang_Sentences {
     /**
      * ArrayList for prepositions.
      */
-    private ArrayList<String> prepositions = new ArrayList<String>(Arrays.asList(
+    public ArrayList<String> prepositions = new ArrayList<String>(Arrays.asList(
         "of",
         "with",
         "at",
@@ -152,8 +154,8 @@ public class KoriKaufmanJoshuaWang_Sentences {
     /**
      * ArrayList for both adjective and adverbs (to convert to an adverb, all these adjectives can have "-ly" appened to it)
      */
-    private ArrayList<String> adjectives = new ArrayList<String>(Arrays.asList(
-        "majestic",
+    public ArrayList<String> adjectives = new ArrayList<String>(Arrays.asList(
+        "cool",
         "wonderful",
         "typical",
         "rampant",
@@ -165,7 +167,8 @@ public class KoriKaufmanJoshuaWang_Sentences {
         "normal",
         "abnormal",
         "slow",
-        "quick"
+        "quick",
+        "clever"
     ));
     /**
      * @return Random String at a random index of the passed ArrayList.
@@ -204,8 +207,9 @@ public class KoriKaufmanJoshuaWang_Sentences {
     }
     
     public static void main(String[] args){
+        System.out.println("5 Random Sentences:\n");
         KoriKaufmanJoshuaWang_Sentences driver = new KoriKaufmanJoshuaWang_Sentences();
-        for (int i = 1; i <= 10; i++){
+        for (int i = 1; i <= 5; i++){
             System.out.println(driver.getSentence());
         }
     }
