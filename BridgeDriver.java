@@ -1,5 +1,5 @@
 /**
- * <p>Driver Class</p>
+ * <p>BridgeDriver Class</p>
  *
  * <h2>Course Info:</h2>
  * ISC4U0 with Krasteva, V.
@@ -7,7 +7,7 @@
  * @version 1.1
  * @author Joshua Wang & Kori Kaufman
  */
-public class Driver {
+public class BridgeDriver {
   /**
    * Main method, creates object of Bridge class, introduces purpose of program, calls shuffleDeck(), deal(), and display() methods
    */
